@@ -1,0 +1,12 @@
+model:
+  tunnel:
+    Tunnel2:
+      continuous_gate: 1
+      gate_opening_curve:
+        ref: 0
+        x:
+          - 0
+          - 1
+        y:
+          - 0
+          - 1

@@ -1,0 +1,9 @@
+TUNNEL gate_positions Tunnel2
+#Id;Number;Reference;Pts;X_unit;Y_unit
+10600      0      0.000      4 NO_UNIT PERCENT
+#  x_value;   y_value;
+0 0.0
+1 1.0
+
+TUNNEL continuous_gate Tunnel2
+1

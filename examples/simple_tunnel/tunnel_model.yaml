@@ -1,0 +1,186 @@
+time:
+  starttime: 2018-02-27 00:00:00
+  endtime: 2018-02-27 06:00:00
+  timeunit: hour
+  timeresolution:
+    2018-02-27 00:00:00: 1
+model:
+  reservoir:
+    Reservoir1:
+      start_vol: 0
+      start_head: 93
+      max_vol: 5
+      lrl: 90
+      hrl: 100
+      vol_head:
+        ref: 0
+        x:
+          - 0
+          - 5
+          - 6
+        y:
+          - 90
+          - 100
+          - 101
+      flow_descr:
+        ref: 0
+        x:
+          - 100
+          - 101
+        y:
+          - 0
+          - 1000
+      endpoint_desc_nok_mwh:
+        ref: 0
+        x:
+          - 0
+        y:
+          - 31.7
+    Reservoir2:
+      start_vol: 0
+      start_head: 93
+      max_vol: 5
+      lrl: 90
+      hrl: 100
+      vol_head:
+        ref: 0
+        x:
+          - 0
+          - 5
+          - 6
+        y:
+          - 90
+          - 100
+          - 101
+      flow_descr:
+        ref: 0
+        x:
+          - 100
+          - 101
+        y:
+          - 0
+          - 1000
+      endpoint_desc_nok_mwh:
+        ref: 0
+        x:
+          - 0
+        y:
+          - 31.7
+    Reservoir3:
+      start_vol: 0
+      start_head: 97
+      max_vol: 5
+      lrl: 90
+      hrl: 100
+      vol_head:
+        ref: 0
+        x:
+          - 0
+          - 5
+          - 6
+        y:
+          - 90
+          - 100
+          - 101
+      flow_descr:
+        ref: 0
+        x:
+          - 100
+          - 101
+        y:
+          - 0
+          - 1000
+      endpoint_desc_nok_mwh:
+        ref: 0
+        x:
+          - 0
+        y:
+          - 31.7
+      inflow:
+        2018-02-27 00:00:00: 200
+  plant:
+    Plant1:
+      main_loss:
+        - 0.0002
+      penstock_loss:
+        - 0.0001
+  generator:
+    P1G1:
+      penstock: 1
+      p_min: 0.1
+      p_max: 100
+      p_nom: 100
+      gen_eff_curve:
+        ref: 0
+        x:
+          - 0
+          - 100
+        y:
+          - 95
+          - 98
+      turb_eff_curves:
+        - ref: 90
+          x:
+            - 1
+            - 90
+            - 100
+          y:
+            - 80
+            - 95
+            - 90
+        - ref: 100
+          x:
+            - 1
+            - 90
+            - 100
+          y:
+            - 82
+            - 98
+            - 92
+      startcost:
+        2018-02-27 00:00:00: 0
+  tunnel:
+    Tunnel1:
+      start_height: 90
+      end_height: 90
+      diameter: 3
+      length: 2022
+      loss_factor: 0.00016
+    Tunnel2:
+      start_height: 90
+      end_height: 90
+      diameter: 3
+      length: 2022
+      loss_factor: 0.00015
+    Tunnel3:
+      start_height: 90
+      end_height: 90
+      diameter: 3
+      length: 2022
+      loss_factor: 0.0003
+  market:
+    1:
+      market_type: ENERGY
+      max_buy:
+        2018-02-27 00:00:00: 9999
+      max_sale:
+        2018-02-27 00:00:00: 9999
+      buy_price:
+        2018-02-27 00:00:00: 40.01
+      sale_price:
+        2018-02-27 00:00:00: 39.99
+connections:
+  - from: Tunnel1
+    to: Reservoir2
+  - from: Tunnel2
+    to: Reservoir3
+  - from: Tunnel3
+    to: Plant1
+  - from: Plant1
+    to: P1G1
+  - from: Reservoir1
+    to: Tunnel1
+  - from: Reservoir2
+    to: Tunnel2
+  - from: Reservoir3
+    to: Tunnel3

@@ -1,0 +1,6 @@
+NAMELIST_ICC
+2, 1001
+3, Reservoir1
+2, 1002
+3, Reservoir2
+-1

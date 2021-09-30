@@ -1,0 +1,8 @@
+model:
+  reservoir:
+    Reservoir1:
+      energy_value_input: 31
+    Reservoir2:    
+      energy_value_input: 30
+    Reservoir3:
+      energy_value_input: 20

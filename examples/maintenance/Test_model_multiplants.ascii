@@ -1,0 +1,1086 @@
+RESERVOIR attributes RSV001
+# id water_course type maxvol  lrl  hrl
+  0       0        0     638.6  939.0  974.0    
+
+RESERVOIR attributes RSV002
+# id water_course type maxvol  lrl    hrl
+  0       0        0     258.  680.0  687.2
+
+RESERVOIR attributes RSV003
+# id water_course type maxvol  lrl  hrl
+  0       0        0     25.3  677. 687.  
+
+RESERVOIR attributes RSV004
+# id water_course type maxvol  lrl  hrl
+  0       0        0     31.8  878.5  885.5 
+
+RESERVOIR attributes RSV005
+# id water_course type maxvol  lrl  hrl
+  0       0        0     2.4   835.0 838.0
+
+RESERVOIR attributes RSV006
+# id water_course type maxvol  lrl   hrl
+  0       0        0    11.2   462.  465.5
+
+RESERVOIR attributes RSV007
+# id water_course type maxvol  lrl  hrl
+  0       0        0     58.2  705.  740.    
+
+RESERVOIR attributes RSV008
+# id water_course type maxvol  lrl  hrl
+  0       0        0     75.5  427.2  445.6 
+
+RESERVOIR attributes RSV009
+# id water_course type maxvol  lrl    hrl
+  0       0        0    86.9   69.8   72.34   
+
+
+
+# Volume head descriptions
+
+RESERVOIR vol_head RSV001
+# id 	number 	ref 	npkt	x_unit	y_unit
+  0       1	0	11       MM3   METER
+# x	 	 y
+                0.00       939.0  
+               15.57       943.200  
+               52.09       947.300  
+              106.08       951.400  
+              177.36       955.500  
+              261.40       959.600  
+              358.19       963.700  
+              464.32       967.800  
+              577.91       971.900 
+              638.6        974.000
+              698.02       976.000  
+
+RESERVOIR vol_head RSV002
+# id 	number 	ref 	npkt	x_unit	y_unit
+  0       1	0	10       MM3   METER
+# x	 	 y
+			0.00   	 	 680.000 
+			29.98 	 	 680.900 
+			61.20 	 	 681.800 
+			92.44 	 	 682.700 
+			123.80 	  	 683.600 
+			155.38 	  	 684.500 
+			187.66 	  	 685.400 
+			220.56 	  	 686.300 
+			258.00 	  	 687.200 
+			292.00 	  	 688.000 
+
+RESERVOIR vol_head  RSV003
+# id 	number 	ref 	npkt	x_unit	y_unit
+  0       1	0	6       MM3   METER 
+# x	 	 y 
+              0.00        677.000  
+              6.50        680.000  
+             13.80        683.000  
+             19.54        685.050  
+             25.30        687.000  
+             28.27        687.990  
+
+RESERVOIR vol_head RSV004
+# id 	number 	ref 	npkt	x_unit	y_unit
+  0       1	0	10       MM3   METER
+# x	 	 y
+            0.00           878.500  
+            3.12           879.700  
+            5.40           880.500  
+            7.88           881.200  
+           11.40           882.000  
+           14.00           882.500  
+           19.60           883.500  
+           25.60           884.500  
+           31.80           885.500  
+           38.20           886.500  
+
+
+RESERVOIR vol_head RSV005
+# id 	number 	ref 	npkt	x_unit	y_unit
+  0       1	0	9       MM3   METER
+# x	 	 y
+			0	 		835.000 
+			0.18	 	835.280 
+			0.42	 	835.620 
+			0.66	 	835.960 
+			0.84	 	836.200 
+			1.08	 	836.500 
+			1.5	 		837.000 
+			2.4	 		838.000 
+			2.5	 		838.100 
+
+
+
+RESERVOIR vol_head RSV006
+# id 	number 	ref 	npkt	x_unit	y_unit
+  0       1	0	9       MM3   METER
+# x	 	 y
+              0.00       462.000  
+              0.75       462.400  
+              2.37       463.150  
+              3.80       463.700  
+              5.00       464.050  
+              7.18       464.600  
+              8.91       465.000  
+             11.20       465.500  
+             13.65       466.000  
+
+
+
+RESERVOIR vol_head RSV007
+# id 	number 	ref 	npkt	x_unit	y_unit
+  0       1	0	7       MM3   METER
+# x	 	 y
+          0.00       705.000  
+          4.35       712.000  
+         11.65       719.000  
+         22.25       726.000  
+         37.70       733.000  
+         58.20       740.000  
+         85.40       747.000  
+
+
+
+RESERVOIR vol_head RSV008
+# id 	number 	ref 	npkt	x_unit	y_unit
+  0       1	0	7       MM3   METER
+# x	 	 y
+         0.00        427.200  
+        13.38        431.000  
+        28.82        435.000  
+        45.00        439.000  
+        62.95        443.000  
+        75.50        445.600  
+        87.71        448.000  
+
+
+
+RESERVOIR vol_head RSV009
+# id 	number 	ref 	npkt	x_unit	y_unit
+  0       1	0	2       MM3   METER
+# x	 	 y
+     0.00           69.800 
+     86.90          72.340
+
+
+############## Plant descriptions  ##################
+
+PLANT attributes PLANT001
+# id 	water_course 	type 	bid_area 	prod_area 	num_units 	num_pump
+  0     0        		0      	1	    	1	     	1			0
+# num_main_segm 	num_penstock 	time_delay 	prod_factor 	outlet_line
+  1		   			1		 		0	   		0.0	     		686.
+# main_loss
+0.00
+# penstock_loss
+0.00102 
+
+
+####################
+
+PLANT attributes PLANT002
+# id water_course type bid_area prod_area num_units num_pump
+  0       0        0      1	    1	     3		0
+# num_main_segm num_penstock time_delay prod_factor outlet_line (E =.54)
+     1		   3		 0	   0.0	     464.5
+# main_loss
+0.0002
+# penstock_loss
+0.00121  0.00121  0.00121 
+
+
+##########################
+
+PLANT attributes PLANT003
+# id water_course type bid_area prod_area num_units num_pump
+  0       0        0      1	    1	     2		0
+# num_main_segm num_penstock time_delay prod_factor outlet_line
+     1		   2		 0	   0.0	      572.
+# main_loss
+0.001
+# penstock_loss
+0.002  0.002
+
+###########################
+
+PLANT attributes PLANT004
+# id water_course type bid_area prod_area num_units num_pump
+  0       0        0      1	    1	     4		0
+# num_main_segm num_penstock time_delay prod_factor outlet_line (E = 0.93)
+     1		   2		 0	   0.0	     72.
+# main_loss
+0.001
+# penstock_loss
+0.00151  0.00151 
+
+#############################
+
+PLANT attributes PLANT005
+# id water_course type bid_area prod_area num_units num_pump
+  0       0        0      1	    1	     1		0
+# num_main_segm num_penstock time_delay prod_factor outlet_line
+     1		   1		 0	   0.0	      438.2
+# main_loss
+0.00
+# penstock_loss
+0.0230 
+
+##############################
+
+PLANT attributes PLANT006
+# id water_course type bid_area prod_area num_units num_pump
+  0       0        0      1	    1	     1		0
+# num_main_segm num_penstock time_delay prod_factor outlet_line
+     1		   1		 0	   0.0	     93.5
+# main_loss
+0.00
+# penstock_loss
+0.0405 
+
+###############################
+
+PLANT attributes PLANT007
+# id water_course type bid_area prod_area num_units num_pump
+  0       0        0      1	    1	     1		0
+# num_main_segm num_penstock time_delay prod_factor outlet_line
+     1		   1		 0	   0.0		60.     
+# main_loss
+0.00
+# penstock_loss
+0.00004 
+
+
+############  Generator descriptions #########################
+
+GENERATOR attributes PLANT001 1
+# id type penstock nomprod minprod maxprod startcost
+  0   0       1     120.     40.     120.     125.
+
+GENERATOR gen_eff_curve PLANT001 1
+# id 	number 	ref 	npkt	x_unit	y_unit
+  0       1	0	8	MW       %
+# x	 y
+ 38.80            97.10    
+ 63.70            98.02   
+ 73.70            98.25   
+ 78.70            98.34   
+ 83.60            98.41   
+ 90.60            98.45   
+ 108.30           98.50   
+ 124.10           98.50
+
+GENERATOR turb_eff_curves PLANT001  1
+# id 	number 	ref 	npkt	x_unit	y_unit
+  0       1	256.	8	m3/s       %
+# x	 y
+   17.21    89.80   
+   26.94    93.20     
+   30.78    94.10     
+   32.72    94.40     
+   34.71    94.50     
+   37.53    94.60     
+   45.02    94.20     
+   49.37    93.70 
+    
+GENERATOR turb_eff_curves PLANT001  1
+# id 	number 	ref 	npkt	x_unit	y_unit
+  0       1	264.	8	m3/s       %
+# x	 y
+  17.21    89.70    
+  26.94    93.10   
+  30.78    94.05   
+  32.72    94.35   
+  34.71    94.50   
+  37.53    94.60   
+  45.02    94.30   
+  49.37    93.80
+   
+GENERATOR turb_eff_curves PLANT001  1
+# id 	number 	ref 	npkt	x_unit	y_unit
+  0       1	272.	8	m3/s       %
+# x	 y
+             17.21         89.60    
+             26.94         93.00    
+             30.78         94.00    
+             32.72         94.30    
+             34.71         94.50    
+             37.53         94.60    
+             45.02         94.40    
+             49.37         93.90    
+
+
+GENERATOR attributes PLANT002 1
+# id type penstock nomprod minprod maxprod startcost
+  0   0       1     110.  75.  110.  65.
+
+
+
+GENERATOR gen_eff_curve PLANT002 1
+# id 	number 	ref 	npkt	x_unit	y_unit
+  0       1	0	8	MW       %
+# x	 y
+              36.50         97.20     
+              51.40         97.95     
+              64.90         98.28     
+              74.80         98.46     
+              85.20         98.55     
+              92.70         98.62     
+             106.10         98.71     
+             113.60         98.75     
+
+GENERATOR turb_eff_curves PLANT002  1
+# id 	number 	ref 	npkt	x_unit	y_unit
+  0       1	209.	8	m3/s       %
+# x	 y
+          20.64         86.40     
+          27.28         91.40     
+          33.40         93.20     
+          38.35         94.00     
+          43.26         94.80     
+          47.31         94.00     
+          54.66         93.00     
+          59.11         92.90  
+
+GENERATOR turb_eff_curves PLANT002  1
+# id 	number 	ref 	npkt	x_unit	y_unit
+  0       1	215.	8	m3/s       %
+# x	 y   
+          20.64         86.10     
+          27.28         91.20     
+          33.40         93.10     
+          38.35         93.90     
+          43.26         94.75     
+          47.31         94.15     
+          54.66         93.20     
+          59.11         93.10   
+
+GENERATOR turb_eff_curves PLANT002  1
+# id 	number 	ref 	npkt	x_unit	y_unit
+  0       1	221.	8	m3/s       %
+# x	 y  
+          20.64         85.80     
+          27.28         90.90     
+          33.40         93.00     
+          38.35         93.80     
+          43.26         94.80     
+          47.31         94.20     
+          54.66         93.30     
+          59.11         93.20     
+
+
+
+GENERATOR attributes PLANT002 2
+# id type penstock nomprod minprod maxprod startcost
+  0   0       2     110.  75.  110. 65.
+
+
+GENERATOR gen_eff_curve PLANT002 2
+# id 	number 	ref 	npkt	x_unit	y_unit
+  0       1	0	8	MW       %
+# x	 y
+        36.50          97.20     
+        51.40          97.95     
+        64.90          98.28     
+        74.80          98.46     
+        86.70          98.55     
+        92.70          98.62     
+       106.00          98.71     
+       114.00          98.75   
+
+GENERATOR turb_eff_curves PLANT002  2
+# id 	number 	ref 	npkt	x_unit	y_unit
+  0       1	209.	8	m3/s       %
+# x	 y
+         20.50       87.00    
+         27.16       91.80    
+         33.45       93.60    
+         38.11       94.40    
+         43.80       95.20    
+         46.84       95.00    
+         54.19       93.80    
+         58.76       93.70  
+
+GENERATOR turb_eff_curves PLANT002  2
+# id 	number 	ref 	npkt	x_unit	y_unit
+  0       1	215.	8	m3/s       %
+# x	 y  
+         20.50       86.70    
+         27.16       91.60    
+         33.45       93.50    
+         38.11       94.50    
+         43.80       95.22    
+         46.84       95.10    
+         54.19       94.00    
+         58.76       93.90  
+
+GENERATOR turb_eff_curves PLANT002  2
+# id 	number 	ref 	npkt	x_unit	y_unit
+  0       1	221.	8	m3/s       %
+# x	 y    
+         20.50       86.50    
+         27.16       91.40    
+         33.45       93.40    
+         38.11       94.40    
+         43.80       95.20    
+         46.84       95.10    
+         54.19       94.20    
+         58.76       94.10    
+
+
+GENERATOR attributes PLANT002 3
+# id type penstock nomprod minprod maxprod startcost
+  0   0       3     110. 75. 110. 65.
+
+GENERATOR gen_eff_curve PLANT002 3
+# id 	number 	ref 	npkt	x_unit	y_unit
+  0       1	0	8	MW       %
+# x	 y
+             36.50          97.20     
+             51.40          97.95     
+             64.90          98.28     
+             74.80          98.46     
+             86.70          98.55     
+             92.70          98.62     
+            106.10          98.71     
+            113.60          98.75  
+   
+GENERATOR turb_eff_curves PLANT002  3
+# id 	number 	ref 	npkt	x_unit	y_unit
+  0       1	209.	8	m3/s       %
+# x	 y
+          20.71       86.10     
+          27.28       91.40     
+          33.52       93.40     
+          38.35       94.00     
+          43.90       95.00     
+          46.93       94.80     
+          54.37       93.50     
+          58.92       93.40 
+    
+GENERATOR turb_eff_curves PLANT002  3
+# id 	number 	ref 	npkt	x_unit	y_unit
+  0       1	215.	8	m3/s       %
+# x	 y
+          20.71       85.80     
+          27.28       91.20     
+          33.52       93.30     
+          38.35       93.90     
+          43.90       94.99     
+          46.93       94.92     
+          54.37       93.70     
+          58.92       93.60
+
+GENERATOR turb_eff_curves PLANT002  3
+# id 	number 	ref 	npkt	x_unit	y_unit
+  0       1	221.	8	m3/s       %
+# x	 y     
+          20.71       85.50     
+          27.28       91.00     
+          33.52       93.20     
+          38.35       93.80     
+          43.90       95.00     
+          46.93       95.00     
+          54.37       93.90     
+          58.92       93.80     
+
+
+GENERATOR attributes PLANT003 1
+# id type penstock nomprod minprod maxprod startcost
+  0   0       1     2.2		0.5		2.2		20
+
+GENERATOR gen_eff_curve PLANT003 1
+# id 	number 	ref 	npkt	x_unit	y_unit
+  0       1	0	8	MW       %
+# x	 y
+              0.80          95.07    
+              1.00          95.90    
+              1.20          96.37    
+              1.40          96.67    
+              1.50          96.82    
+              1.60          96.96    
+              1.80          97.03    
+              2.10          97.10    
+ 
+GENERATOR turb_eff_curves PLANT003  1
+# id 	number 	ref 	npkt	x_unit	y_unit
+  0       1	244.	8	m3/s       %
+# x	 y
+          0.39         86.20    
+          0.49         86.90    
+          0.59         87.40    
+          0.68         87.57    
+          0.73         87.60    
+          0.81         87.40    
+          0.89         87.15    
+          1.05         86.30    
+
+
+GENERATOR attributes PLANT003 2
+# id type penstock nomprod
+  0   0       2     2.2		0.5		2.2		20
+
+GENERATOR gen_eff_curve PLANT003 2
+# id 	number 	ref 	npkt	x_unit	y_unit
+  0       1	0	8	MW       %
+# x	 y
+              0.80          95.07    
+              1.00          95.90    
+              1.20          96.37    
+              1.40          96.67    
+              1.50          96.82    
+              1.60          96.96    
+              1.80          97.03    
+              2.10          97.10    
+ 
+GENERATOR turb_eff_curves PLANT003  2
+# id 	number 	ref 	npkt	x_unit	y_unit
+  0       1	244.	8	m3/s       %
+# x	 y
+          0.39         86.20    
+          0.49         86.90    
+          0.59         87.40    
+          0.68         87.57    
+          0.73         87.60    
+          0.81         87.40    
+          0.89         87.15    
+          1.05         86.30    
+
+
+GENERATOR attributes PLANT004  1
+# id type penstock nomprod	minprod	maxprod	startcost
+  0   0       1     100.  60. 100. 65.
+
+
+
+GENERATOR gen_eff_curve PLANT004  1
+# id 	number 	ref 	npkt	x_unit	y_unit
+  0       1	0	8	MW       %
+# x	 y
+          50.60          97.35     
+          58.50          97.58     
+          66.50          97.82     
+          72.50          97.95     
+          76.50          98.03     
+          88.30          98.13     
+          98.20          98.17     
+         110.00          98.20     
+
+GENERATOR turb_eff_curves PLANT004  1
+# id 	number 	ref 	npkt	x_unit	y_unit
+  0       1	366.	8	m3/s       %
+# x	 y
+     15.53        90.70     
+     17.63        92.10     
+     19.77        93.10     
+     21.38        93.70     
+     22.48        93.80     
+     25.86        94.10     
+     28.78        93.80     
+     32.48        93.10 
+
+GENERATOR turb_eff_curves PLANT004  1
+# id 	number 	ref 	npkt	x_unit	y_unit
+  0       1	377.	8	m3/s       %
+# x	 y    
+     15.53        90.50     
+     17.63        91.95     
+     19.77        92.95     
+     21.38        93.55     
+     22.48        93.77     
+     25.86        94.05     
+     28.78        93.90     
+     32.48        93.20
+  
+GENERATOR turb_eff_curves PLANT004  1
+# id 	number 	ref 	npkt	x_unit	y_unit
+  0       1	388.	8	m3/s       %
+# x	 y     
+     15.53        90.30     
+     17.63        91.80     
+     19.77        92.80     
+     21.38        93.50     
+     22.48        93.70     
+     25.86        94.10     
+     28.78        94.00     
+     32.48        93.30     
+
+GENERATOR attributes PLANT004  2
+# id type penstock nomprod minprod maxprod startcost
+  0   0       1     100.  60. 100. 65.
+
+
+GENERATOR gen_eff_curve PLANT004  2
+# id 	number 	ref 	npkt	x_unit	y_unit
+  0       1	0	8	MW       %
+# x	 y
+          50.60          97.35     
+          58.50          97.58     
+          66.50          97.82     
+          72.50          97.95     
+          76.50          98.03     
+          88.30          98.13     
+          98.20          98.17     
+         110.00          98.20     
+
+GENERATOR turb_eff_curves PLANT004  2
+# id 	number 	ref 	npkt	x_unit	y_unit
+  0       1	366.	8	m3/s       %
+# x	 y
+      15.53        90.70     
+      17.63        92.10     
+      19.77        93.10     
+      21.38        93.60     
+      22.48        93.80     
+      25.01        94.00     
+      28.84        93.60     
+      32.51        93.10 
+
+GENERATOR turb_eff_curves PLANT004  2
+# id 	number 	ref 	npkt	x_unit	y_unit
+  0       1	377.	8	m3/s       %
+# x	 y    
+      15.53        90.50     
+      17.63        91.95     
+      19.77        92.95     
+      21.38        93.55     
+      22.48        93.77     
+      25.01        94.00     
+      28.84        93.70     
+      32.51        93.20
+
+GENERATOR turb_eff_curves PLANT004  2
+# id 	number 	ref 	npkt	x_unit	y_unit
+  0       1	388.	8	m3/s       %
+# x	 y        
+      15.53        90.30     
+      17.63        91.80     
+      19.77        92.80     
+      21.38        93.40     
+      22.48        93.70     
+      25.01        94.00     
+      28.84        93.70     
+      32.51        93.30     
+
+
+GENERATOR attributes PLANT004  3
+# id type penstock nomprod minprod maxprod startcost
+  0   0       2     100.  60. 100. 65.
+
+
+
+GENERATOR gen_eff_curve PLANT004  3
+# id 	number 	ref 	npkt	x_unit	y_unit
+  0       1	0	8	MW       %
+# x	 y
+          50.60          97.35     
+          58.50          97.58     
+          66.50          97.82     
+          72.50          97.95     
+          76.50          98.03     
+          88.30          98.13     
+          98.20          98.17     
+         110.00          98.20     
+
+GENERATOR turb_eff_curves PLANT004  3
+# id 	number 	ref 	npkt	x_unit	y_unit
+  0       1	366.	8	m3/s       %
+# x	 y
+         15.54        90.60     
+         17.68        91.80     
+         19.85        92.70     
+         21.49        93.20     
+         22.60        93.30     
+         26.00        93.60     
+         28.99        93.20     
+         32.76        92.30 
+
+GENERATOR turb_eff_curves PLANT004  3
+# id 	number 	ref 	npkt	x_unit	y_unit
+  0       1	377.	8	m3/s       %
+# x	 y    
+         15.54        90.42     
+         17.68        91.70     
+         19.85        92.60     
+         21.49        93.06     
+         22.60        93.28     
+         26.00        93.55     
+         28.99        93.22     
+         32.76        92.40 
+
+GENERATOR turb_eff_curves PLANT004  3
+# id 	number 	ref 	npkt	x_unit	y_unit
+  0       1	388.	8	m3/s       %
+# x	 y      
+         15.54        90.30     
+         17.68        91.60     
+         19.85        92.50     
+         21.49        93.00     
+         22.60        93.20     
+         26.00        93.60     
+         28.99        93.30     
+         32.76        92.50    
+
+GENERATOR attributes PLANT004  4
+# id type penstock nomprod minprod maxprod startcost
+  0   0       2     100.  60. 100. 65.
+
+
+GENERATOR gen_eff_curve PLANT004  4
+# id 	number 	ref 	npkt	x_unit	y_unit
+  0       1	0	8	MW       %
+# x	 y
+      50.60          97.35    
+      58.50          97.58    
+      66.50          97.82    
+      72.50          97.95    
+      76.50          98.03    
+      85.40          98.13    
+      98.20          98.17    
+     110.00          98.20    
+
+
+GENERATOR turb_eff_curves PLANT004  4
+# id 	number 	ref 	npkt	x_unit	y_unit
+  0       1	366.	8	m3/s       %
+# x	 y
+             15.70         89.80     
+             17.70         91.80     
+             19.77         93.10     
+             21.38         93.60     
+             22.48         93.80     
+             25.04         93.90     
+             28.89         93.50     
+             32.58         92.80 
+
+GENERATOR turb_eff_curves PLANT004  4
+# id 	number 	ref 	npkt	x_unit	y_unit
+  0       1	377.	8	m3/s       %
+# x	 y    
+             15.70         89.50     
+             17.70         91.60     
+             19.77         92.95     
+             21.38         93.55     
+             22.48         93.77     
+             25.04         93.90     
+             28.89         93.55     
+             32.58         92.90
+
+GENERATOR turb_eff_curves PLANT004  4
+# id 	number 	ref 	npkt	x_unit	y_unit
+  0       1	388.	8	m3/s       %
+# x	 y         
+             15.70         89.30     
+             17.70         91.40     
+             19.77         93.00     
+             21.38         93.50     
+             22.48         93.70     
+             25.04         93.90     
+             28.89         93.60     
+             32.58         93.00     
+
+
+GENERATOR attributes PLANT005  1
+# id type penstock nomprod minprod maxprod startcost
+  0   0       1     20.		8	20	30
+
+GENERATOR gen_eff_curve PLANT005  1
+# id 	number 	ref 	npkt	x_unit	y_unit
+  0       1	0	8	MW       %
+# x	 y
+        6.30           96.53     
+        8.40           97.27     
+       10.00           97.55     
+       11.50           97.68     
+       13.70           97.83     
+       16.00           97.94     
+       18.30           98.02     
+       22.40           98.10     
+
+GENERATOR turb_eff_curves PLANT005  1
+# id 	number 	ref 	npkt	x_unit	y_unit
+  0       1	261.	8	m3/s       %
+# x	 y
+               2.91        85.80     
+               3.71        88.80     
+               4.36        90.60     
+               4.94        91.60     
+               5.78        92.80     
+               6.71        93.00     
+               7.74        92.40     
+               8.71        91.40 
+
+GENERATOR turb_eff_curves PLANT005  1
+# id 	number 	ref 	npkt	x_unit	y_unit
+  0       1	266.	8	m3/s       %
+# x	 y    
+               2.91        85.60     
+               3.71        88.70     
+               4.36        90.50     
+               4.94        91.50     
+               5.78        92.70     
+               6.71        93.00     
+               7.74        92.50     
+               8.71        91.50
+
+GENERATOR turb_eff_curves PLANT005  1
+# id 	number 	ref 	npkt	x_unit	y_unit
+  0       1	285.	8	m3/s       %
+# x	 y      
+               2.91        85.10     
+               3.71        88.40     
+               4.36        90.20     
+               4.94        91.20     
+               5.78        92.50     
+               6.71        93.00     
+               7.74        92.70     
+               8.71        91.80    
+
+
+GENERATOR attributes PLANT006   1
+# id type penstock nomprod minprod maxprod startcost
+  0   0       1     45.		20		45		45
+
+GENERATOR gen_eff_curve PLANT006   1
+# id 	number 	ref 	npkt	x_unit	y_unit
+  0       1	0	8	MW       %
+# x	 y
+                 18.50           97.23     
+                 21.50           97.57     
+                 24.50           97.83     
+                 28.50           98.12     
+                 32.40           98.31     
+                 34.40           98.38     
+                 37.40           98.45     
+                 43.10           98.53     
+
+GENERATOR turb_eff_curves PLANT006   1
+# id 	number 	ref 	npkt	x_unit	y_unit
+  0       1	325.	9	m3/s       %
+# x	 y
+            7.04       86.60     
+            7.63       87.90     
+            8.51       89.60     
+            9.70       91.10     
+           10.91       92.10     
+           11.52       92.50     
+           12.43       93.00     
+           13.68       93.60     
+           14.00       93.50 
+
+GENERATOR turb_eff_curves PLANT006   1
+# id 	number 	ref 	npkt	x_unit	y_unit
+  0       1	335.	9	m3/s       %
+# x	 y    
+            7.04       86.40     
+            7.63       87.70     
+            8.51       89.35     
+            9.70       90.90     
+           10.91       92.00     
+           11.52       92.40     
+           12.43       92.95     
+           13.68       93.50     
+           14.00       93.40 
+
+GENERATOR turb_eff_curves PLANT006   1
+# id 	number 	ref 	npkt	x_unit	y_unit
+  0       1	345.	9	m3/s       %
+# x	 y        
+            7.04       86.00     
+            7.63       87.50     
+            8.51       89.20     
+            9.70       91.80     
+           10.91       91.80     
+           11.52       92.30     
+           12.43       92.80     
+           13.68       93.40     
+           14.00       93.30   
+
+
+GENERATOR attributes PLANT007   1
+# id type penstock nomprod minprod maxprod startcost
+  0   0       1     16.		5.		16.		30.
+
+GENERATOR gen_eff_curve PLANT007   1
+# id 	number 	ref 	npkt	x_unit	y_unit
+  0       1	0	8	MW       %
+# x	 y
+              3.10          96.41     
+              5.00          97.00     
+              6.90          97.40     
+              8.80          97.66     
+             10.60          97.80     
+             12.40          97.84     
+             15.80          97.88     
+             17.30          97.90   
+
+
+GENERATOR turb_eff_curves PLANT007   1
+# id 	number 	ref 	npkt	x_unit	y_unit
+  0       1	11.40	8	m3/s       %
+# x	 y
+            34.50       83.00     
+            50.60       91.80     
+            67.90       93.40     
+            85.30       94.25     
+           101.90       94.70     
+           119.00       94.90     
+           153.10       94.10     
+           170.10       93.00 
+
+# Gate descriptions
+#RSV001
+GATE attributes b_RSV001_RSV002 
+# Id  Water_course  Type  Time_delay  Num_parallell_gates  Gate_slack  Max_discharge
+  0        0         0        0                1               0           1000
+
+GATE attributes s_RSV001_RSV002 
+# Id  Water_course  Type  Time_delay  Num_parallell_gates  Gate_slack  Max_discharge
+  0        0         0        0                1               0           1000
+
+
+#RSV002
+GATE attributes c_RSV002_RSV003 
+# Id  Water_course  Type  Time_delay  Num_parallell_gates  Gate_slack  Max_discharge
+  0        0         0        0                1               0           50
+
+GATE attributes s_RSV002_RSV003 
+# Id  Water_course  Type  Time_delay  Num_parallell_gates  Gate_slack  Max_discharge
+  0        0         0        0                1               0           1000
+
+
+#RSV003
+GATE attributes b_RSV003_RSV009 
+# Id  Water_course  Type  Time_delay  Num_parallell_gates  Gate_slack  Max_discharge
+  0        0         0        0                1               0           50
+
+GATE attributes s_RSV003_RSV009 
+# Id  Water_course  Type  Time_delay  Num_parallell_gates  Gate_slack  Max_discharge
+  0        0         0        0                1               0           1000
+
+
+#RSV004
+GATE attributes c_RSV004_RSV005
+# Id  Water_course  Type  Time_delay  Num_parallell_gates  Gate_slack  Max_discharge
+  0        0         0        0                1               0           30
+
+GATE attributes s_RSV004_RSV005
+# Id  Water_course  Type  Time_delay  Num_parallell_gates  Gate_slack  Max_discharge
+  0        0         0        0                1               0           1000
+
+
+#RSV005
+GATE attributes b_RSV005_RSV006
+# Id  Water_course  Type  Time_delay  Num_parallell_gates  Gate_slack  Max_discharge
+  0        0         0        0                1               0           50
+
+GATE attributes s_RSV005_RSV006
+# Id  Water_course  Type  Time_delay  Num_parallell_gates  Gate_slack  Max_discharge
+  0        0         0        0                1               0           1000
+
+
+#RSV006
+GATE attributes b_RSV006_RSV009 
+# Id  Water_course  Type  Time_delay  Num_parallell_gates  Gate_slack  Max_discharge
+  0        0         0        0                1               0           50
+
+GATE attributes s_RSV006_RSV009 
+# Id  Water_course  Type  Time_delay  Num_parallell_gates  Gate_slack  Max_discharge
+  0        0         0        0                1               0           1000
+
+
+#RSV007
+GATE attributes b_RSV007_RSV009 
+# Id  Water_course  Type  Time_delay  Num_parallell_gates  Gate_slack  Max_discharge
+  0        0         0        0                1               0           50
+
+GATE attributes s_RSV007_RSV009 
+# Id  Water_course  Type  Time_delay  Num_parallell_gates  Gate_slack  Max_discharge
+  0        0         0        0                1               0           1000
+
+
+#RSV008
+GATE attributes b_RSV008_RSV009 
+# Id  Water_course  Type  Time_delay  Num_parallell_gates  Gate_slack  Max_discharge
+  0        0         0        0                1               0           50
+
+GATE attributes s_RSV008_RSV009 
+# Id  Water_course  Type  Time_delay  Num_parallell_gates  Gate_slack  Max_discharge
+  0        0         0        0                1               0           1000
+
+
+#RSV009
+GATE attributes b_RSV009_SEA 
+# Id  Water_course  Type  Time_delay  Num_parallell_gates  Gate_slack  Max_discharge
+  0        0         0        0                1               0           1000
+
+GATE attributes s_RSV009_SEA 
+# Id  Water_course  Type  Time_delay  Num_parallell_gates  Gate_slack  Max_discharge
+  0        0         0        0                1               0           1000
+
+
+
+
+#  Topology
+
+CONNECT RESERVOIR/PLANT 	RSV001 PLANT001 
+CONNECT RESERVOIR/BYPASS    RSV001 b_RSV001_RSV002
+CONNECT RESERVOIR/SPILL     RSV001 s_RSV001_RSV002 
+CONNECT PLANT/RESERVOIR 	PLANT001  RSV002
+CONNECT GATE/RESERVOIR      b_RSV001_RSV002 RSV002
+CONNECT GATE/RESERVOIR      s_RSV001_RSV002 RSV002
+
+CONNECT RESERVOIR/GATE  	RSV002 c_RSV002_RSV003 
+CONNECT RESERVOIR/SPILL     RSV002 s_RSV002_RSV003
+CONNECT GATE/RESERVOIR  	c_RSV002_RSV003  RSV003
+CONNECT GATE/RESERVOIR  	s_RSV002_RSV003  RSV003
+
+CONNECT RESERVOIR/PLANT 	RSV003 PLANT002
+CONNECT RESERVOIR/BYPASS    RSV003 b_RSV003_RSV009
+CONNECT RESERVOIR/SPILL     RSV003 s_RSV003_RSV009 
+CONNECT PLANT/RESERVOIR 	PLANT002  RSV006
+CONNECT GATE/RESERVOIR      b_RSV003_RSV009 RSV009
+CONNECT GATE/RESERVOIR      s_RSV003_RSV009 RSV009
+
+CONNECT RESERVOIR/GATE  	RSV004 c_RSV004_RSV005
+CONNECT RESERVOIR/SPILL     RSV004 s_RSV004_RSV005 
+CONNECT GATE/RESERVOIR 		c_RSV004_RSV005 RSV005
+CONNECT GATE/RESERVOIR 		s_RSV004_RSV005 RSV005
+
+CONNECT RESERVOIR/PLANT 	RSV005 PLANT003
+CONNECT RESERVOIR/BYPASS    RSV005 b_RSV005_RSV006
+CONNECT RESERVOIR/SPILL     RSV005 s_RSV005_RSV006 
+CONNECT PLANT/RESERVOIR 	PLANT003 RSV006
+CONNECT GATE/RESERVOIR      b_RSV005_RSV006 RSV006
+CONNECT GATE/RESERVOIR      s_RSV005_RSV006 RSV006
+
+CONNECT RESERVOIR/PLANT 	RSV006 PLANT004
+CONNECT RESERVOIR/BYPASS    RSV006 b_RSV006_RSV009
+CONNECT RESERVOIR/SPILL     RSV006 s_RSV006_RSV009 
+CONNECT PLANT/RESERVOIR 	PLANT004   RSV009
+CONNECT GATE/RESERVOIR      b_RSV006_RSV009 RSV009
+CONNECT GATE/RESERVOIR      s_RSV006_RSV009 RSV009
+
+CONNECT RESERVOIR/PLANT 	RSV007  PLANT005
+CONNECT RESERVOIR/BYPASS    RSV007 b_RSV007_RSV009
+CONNECT RESERVOIR/SPILL     RSV007 s_RSV007_RSV009 
+CONNECT PLANT/RESERVOIR 	PLANT005 RSV008
+CONNECT GATE/RESERVOIR      b_RSV007_RSV009 RSV009
+CONNECT GATE/RESERVOIR      s_RSV007_RSV009 RSV009
+
+CONNECT RESERVOIR/PLANT 	RSV008 PLANT006
+CONNECT RESERVOIR/BYPASS    RSV008 b_RSV008_RSV009
+CONNECT RESERVOIR/SPILL     RSV008 s_RSV008_RSV009 
+CONNECT PLANT/RESERVOIR 	PLANT006 RSV009
+CONNECT GATE/RESERVOIR      b_RSV008_RSV009 RSV009
+CONNECT GATE/RESERVOIR      s_RSV008_RSV009 RSV009
+
+CONNECT RESERVOIR/PLANT 	RSV009 PLANT007
+CONNECT RESERVOIR/BYPASS    RSV009 b_RSV009_SEA
+CONNECT RESERVOIR/SPILL     RSV009 s_RSV009_SEA 
+
+
+
+
+
+

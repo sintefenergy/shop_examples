@@ -1,0 +1,14 @@
+RESERVOIR energy_value_input Reservoir1
+#	Number	Ref	Npkt	x_unit	y_unit
+0	1	0	1	Mm3	Kroner
+0	31.0
+
+RESERVOIR energy_value_input Reservoir2
+#	Number	Ref	Npkt	x_unit	y_unit
+0	1	0	1	Mm3	Kroner
+0	30.0
+
+RESERVOIR water_value_input Reservoir3
+#	Number	Ref	Npkt	x_unit	y_unit
+0	1	0	1	Mm3	 NOK/Mm3
+0	5000.0

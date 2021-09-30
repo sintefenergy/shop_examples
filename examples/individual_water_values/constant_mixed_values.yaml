@@ -1,0 +1,13 @@
+model:
+  reservoir:
+    Reservoir1:
+      energy_value_input: 31
+    Reservoir2:
+      energy_value_input: 30
+    Reservoir3:      
+      water_value_input:
+        - ref: 0
+          x:
+            - 0
+          y:
+            - 5000
