@@ -1,0 +1,42 @@
+model:
+  generator:
+    Plant1_G1:
+      fcr_n_up_min:
+        2018-01-23 00:00:00: 1
+      fcr_n_down_min:
+        2018-01-23 00:00:00: 1
+    Plant1_G2:
+      fcr_n_up_min:
+        2018-01-23 00:00:00: 1
+      fcr_n_down_min:
+        2018-01-23 00:00:00: 1
+    Plant2_G1:
+      frr_up_min:
+        2018-01-23 00:00:00: 1
+      fcr_n_up_min:
+        2018-01-23 00:00:00: 1
+      fcr_n_down_min:
+        2018-01-23 00:00:00: 1
+    Plant2_G2:
+      frr_up_min:
+        2018-01-23 00:00:00: 1
+      fcr_n_up_min:
+        2018-01-23 00:00:00: 1
+      fcr_n_down_min:
+        2018-01-23 00:00:00: 1
+    Plant2_G3:
+      frr_up_min:
+        2018-01-23 00:00:00: 1
+      fcr_n_up_min:
+        2018-01-23 00:00:00: 1
+      fcr_n_down_min:
+        2018-01-23 00:00:00: 1
+    Plant2_G4:
+      frr_up_min:
+        2018-01-23 00:00:00: 1
+      fcr_n_up_min:
+        2018-01-23 00:00:00: 1
+      fcr_n_down_min:
+        2018-01-23 00:00:00: 1
+commands:
+    - set reserve_ramping_cost 5

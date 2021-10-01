@@ -1,0 +1,71 @@
+model:
+  reserve_group:
+    fcr_n_group:
+      fcr_n_up_obligation:
+        2018-01-23 00:00:00: 10
+      fcr_n_down_obligation:
+        2018-01-23 00:00:00: 10
+    frr_group:
+      frr_up_obligation:
+        2018-01-23 00:00:00: 15
+connections:
+  - from: fcr_n_group
+    to: Plant1_G1
+    from_type: reserve_group
+    to_type: generator
+    connection_type: connection_standard
+    order: 0
+  - from: fcr_n_group
+    to: Plant1_G2
+    from_type: reserve_group
+    to_type: generator
+    connection_type: connection_standard
+    order: 0
+  - from: fcr_n_group
+    to: Plant2_G1
+    from_type: reserve_group
+    to_type: generator
+    connection_type: connection_standard
+    order: 0
+  - from: frr_group
+    to: Plant2_G1
+    from_type: reserve_group
+    to_type: generator
+    connection_type: connection_standard
+    order: 1
+  - from: fcr_n_group
+    to: Plant2_G2
+    from_type: reserve_group
+    to_type: generator
+    connection_type: connection_standard
+    order: 0
+  - from: frr_group
+    to: Plant2_G2
+    from_type: reserve_group
+    to_type: generator
+    connection_type: connection_standard
+    order: 1
+  - from: fcr_n_group
+    to: Plant2_G3
+    from_type: reserve_group
+    to_type: generator
+    connection_type: connection_standard
+    order: 0
+  - from: frr_group
+    to: Plant2_G3
+    from_type: reserve_group
+    to_type: generator
+    connection_type: connection_standard
+    order: 1
+  - from: fcr_n_group
+    to: Plant2_G4
+    from_type: reserve_group
+    to_type: generator
+    connection_type: connection_standard
+    order: 0
+  - from: frr_group
+    to: Plant2_G4
+    from_type: reserve_group
+    to_type: generator
+    connection_type: connection_standard
+    order: 1
