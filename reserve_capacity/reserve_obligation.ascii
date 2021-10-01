@@ -1,0 +1,118 @@
+RESERVE_GROUP	fcr_n_up	1
+#Id;Number;Start_Time;Time_unit;Period;Data_type;Y_unit;Pts;
+0      0 20180123000000000 HOUR      0     -1 MW     1
+#            Time;      f(t);
+20180123000000000 10.0
+
+RESERVE_GROUP	fcr_n_down	1
+#Id;Number;Start_Time;Time_unit;Period;Data_type;Y_unit;Pts;
+0      0 20180123000000000 HOUR      0     -1 MW     1
+#            Time;      f(t);
+20180123000000000 10.0
+
+RESERVE_GROUP	frr_up	2
+#Id;Number;Start_Time;Time_unit;Period;Data_type;Y_unit;Pts;
+0      0 20180123000000000 HOUR      0     -1 MW     1
+#            Time;      f(t);
+20180123000000000 15.0
+
+#FCR-N UP
+GENERATOR	gen_fcr_n_up_group	Plant1      1
+#	Id	number	starttime		time_unit	period	data_type	y_unit	npts
+0	0	20190913060000000	HOUR		8760		-1	NO_UNIT	1
+#	time		y
+20190913060000000	1.000000000000
+
+GENERATOR	gen_fcr_n_up_group	Plant1      2
+#	Id	number	starttime		time_unit	period	data_type	y_unit	npts
+0	0	20190913060000000	HOUR		8760		-1	NO_UNIT	1
+#	time		y
+20190913060000000	1.000000000000
+
+GENERATOR	gen_fcr_n_up_group	Plant2      1
+#	Id	number	starttime		time_unit	period	data_type	y_unit	npts
+0	0	20190913060000000	HOUR		8760		-1	NO_UNIT	1
+#	time		y
+20190913060000000	1.000000000000
+
+GENERATOR	gen_fcr_n_up_group	Plant2      2
+#	Id	number	starttime		time_unit	period	data_type	y_unit	npts
+0	0	20190913060000000	HOUR		8760		-1	NO_UNIT	1
+#	time		y
+20190913060000000	1.000000000000
+
+GENERATOR	gen_fcr_n_up_group	Plant2      3
+#	Id	number	starttime		time_unit	period	data_type	y_unit	npts
+0	0	20190913060000000	HOUR		8760		-1	NO_UNIT	1
+#	time		y
+20190913060000000	1.000000000000
+
+GENERATOR	gen_fcr_n_up_group	Plant2      4
+#	Id	number	starttime		time_unit	period	data_type	y_unit	npts
+0	0	20190913060000000	HOUR		8760		-1	NO_UNIT	1
+#	time		y
+20190913060000000	1.000000000000
+
+
+#FCR-N DOWN
+GENERATOR	gen_fcr_n_down_group	Plant1      1
+#	Id	number	starttime		time_unit	period	data_type	y_unit	npts
+0	0	20190913060000000	HOUR		8760		-1	NO_UNIT	1
+#	time		y
+20190913060000000	1.000000000000
+
+GENERATOR	gen_fcr_n_down_group	Plant1      2
+#	Id	number	starttime		time_unit	period	data_type	y_unit	npts
+0	0	20190913060000000	HOUR		8760		-1	NO_UNIT	1
+#	time		y
+20190913060000000	1.000000000000
+
+GENERATOR	gen_fcr_n_down_group	Plant2      1
+#	Id	number	starttime		time_unit	period	data_type	y_unit	npts
+0	0	20190913060000000	HOUR		8760		-1	NO_UNIT	1
+#	time		y
+20190913060000000	1.000000000000
+
+GENERATOR	gen_fcr_n_down_group	Plant2      2
+#	Id	number	starttime		time_unit	period	data_type	y_unit	npts
+0	0	20190913060000000	HOUR		8760		-1	NO_UNIT	1
+#	time		y
+20190913060000000	1.000000000000
+
+GENERATOR	gen_fcr_n_down_group	Plant2      3
+#	Id	number	starttime		time_unit	period	data_type	y_unit	npts
+0	0	20190913060000000	HOUR		8760		-1	NO_UNIT	1
+#	time		y
+20190913060000000	1.000000000000
+
+GENERATOR	gen_fcr_n_down_group	Plant2      4
+#	Id	number	starttime		time_unit	period	data_type	y_unit	npts
+0	0	20190913060000000	HOUR		8760		-1	NO_UNIT	1
+#	time		y
+20190913060000000	1.000000000000
+
+
+#FRR UP
+GENERATOR	gen_frr_up_group	Plant2      1
+#	Id	number	starttime		time_unit	period	data_type	y_unit	npts
+0	0	20190913060000000	HOUR		8760		-1	NO_UNIT	1
+#	time		y
+20190913060000000	2.000000000000
+
+GENERATOR	gen_frr_up_group	Plant2      2
+#	Id	number	starttime		time_unit	period	data_type	y_unit	npts
+0	0	20190913060000000	HOUR		8760		-1	NO_UNIT	1
+#	time		y
+20190913060000000	2.000000000000
+
+GENERATOR	gen_frr_up_group	Plant2      3
+#	Id	number	starttime		time_unit	period	data_type	y_unit	npts
+0	0	20190913060000000	HOUR		8760		-1	NO_UNIT	1
+#	time		y
+20190913060000000	2.000000000000
+
+GENERATOR	gen_frr_up_group	Plant2      4
+#	Id	number	starttime		time_unit	period	data_type	y_unit	npts
+0	0	20190913060000000	HOUR		8760		-1	NO_UNIT	1
+#	time		y
+20190913060000000	2.000000000000

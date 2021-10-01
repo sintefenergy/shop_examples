@@ -95,7 +95,7 @@ def build_model(shop):
     settings.mipgap_abs.set(0)
 
 def run_model(shop):
-    shop.start_sim([], ['5'])
+    shop.start_sim([], ['3'])
     shop.set_code(['incremental'], [])
     shop.start_sim([], ['5'])
 
