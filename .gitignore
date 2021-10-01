@@ -1,3 +1,7 @@
 
 .DS_Store
 *.gz
+cuts/.ipynb_checkpoints/cuts-checkpoint.ipynb
+basic/.ipynb_checkpoints/basic-checkpoint.ipynb
+**/*.log
+**/*.cpython-37..pyc
