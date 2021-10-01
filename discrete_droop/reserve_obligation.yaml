@@ -1,0 +1,20 @@
+model:
+  reserve_group:
+    fcr_group:
+      fcr_n_up_obligation:
+        2018-01-23 00:00:00: 20
+      fcr_n_down_obligation:
+        2018-01-23 00:00:00: 20
+connections:
+  - from: fcr_group
+    to: Plant1_G1
+  - from: fcr_group
+    to: Plant1_G2
+  - from: fcr_group
+    to: Plant2_G1
+  - from: fcr_group
+    to: Plant2_G2
+  - from: fcr_group
+    to: Plant2_G3
+  - from: fcr_group
+    to: Plant2_G4
