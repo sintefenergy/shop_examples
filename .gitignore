@@ -5,3 +5,5 @@ cuts/.ipynb_checkpoints/cuts-checkpoint.ipynb
 basic/.ipynb_checkpoints/basic-checkpoint.ipynb
 **/*.log
 **/*.cpython-37..pyc
+reserve_capacity/__pycache__/reserve_cap.cpython-37.pyc
+discrete_droop/__pycache__/discrete_droop.cpython-37.pyc
