@@ -14,7 +14,7 @@ def build_model(shop):
     rsv1.flow_descr.set(pd.Series([0, 1000], index=[1010, 1011], name=0))
 
     gate = shop.model.gate.add_object('Flow_gate') 
-    gate.max_discharge.set(100)    
+    gate.max_discharge.set(50)    
     
     rsv2 = shop.model.reservoir.add_object('Reservoir2')
     rsv2.max_vol.set(39)

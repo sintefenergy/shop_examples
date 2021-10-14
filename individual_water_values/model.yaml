@@ -63,7 +63,7 @@ model:
         2018-01-23 00:00:00: 60
   gate:
     Flow_gate:
-      max_discharge: 100
+      max_discharge: 50
   plant:
     Plant1:
       equal_distribution: -1
