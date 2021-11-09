@@ -395,7 +395,7 @@ GATE max_flow Flow_gate
 #Id;Number;Start_Time;Time_unit;Period;Data_type;Y_unit;Pts
 0      0 20180123000000000 HOUR 0     -1 M3/S      1
 #            Time;      f(t)
-20180123000000000   100.000000
+20180123000000000   50.000000
 
 #Write connection data for the hydro power system
 #;    From_type/To_type; From_name; To_name;
