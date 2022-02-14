@@ -19,9 +19,7 @@ def build_model(shop):
     rsv2.vol_head.set(pd.Series([650, 679, 680], index=[0, 97.5, 104.15], name=0))
     
     plant1 = shop.model.plant.add_object('Plant1')
-    plant1.outlet_line.set(672)
-    plant1.main_loss.set([0])
-    plant1.penstock_loss.set([0.001])
+    plante
     plant1.mip_flag.set(1)
     for gen_no in range(2):
         gen=shop.model.generator.add_object(f"{plant1.get_name()}_G{str(gen_no+1)}")
