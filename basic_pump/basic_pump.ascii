@@ -1,0 +1,171 @@
+OPTIMIZATION time
+#Start_time;   End_time;
+20180227	20180228
+
+#    N_full_iterations   Accuracy;
+OPTIMIZATION 100 -1
+#Id  Number  Start_Time  Time_unit  Period  Data_type  Y_unit  Pts
+	0	0	20180227	HOUR	525600	0	HOUR	1
+# Time      Time_resolution
+2018022700	1.000
+
+RESERVOIR attributes Reservoir1
+#ID;Water_course;Type;Maxvol;Lrl;Hrl;
+10000       0      0  12.00000  90.00000  100.00000 
+
+RESERVOIR vol_head Reservoir1
+#Id;Number;Reference;Pts;X_unit;Y_unit
+10000      0      0.000      9 MM3 METER
+#  x_value;   y_value;
+   0.00000  90.00000 
+   12.00000  100.00000 
+   14.00000  101.00000 
+
+RESERVOIR flow_descr Reservoir1
+#Id;Number;Reference;Pts;X_unit;Y_unit
+10000      0      0.000      2 METER M3/S
+#  x_value;   y_value;
+ 100.00000      0.000 
+ 101.00000   1000.000 
+
+PLANT attributes Plant1 
+#Id;Water_course;Type;Bid_area;Prod_area;Num_units;Num_pumps;
+10500       0      0      1      1      1      1 
+#Num_main_seg;Num_penstock;Time_delay;Prod_factor;Outlet_line;
+     1      1      0      0.000     40.000 
+#Main tunnell loss
+0.0002
+#penstock loss
+0.0001
+
+GENERATOR attributes Plant1 1 
+#Id Type Penstock Nom_prod Min_prod Max_prod Start_cost 
+10600 0      1     100.0      25.0     100.0   500.000 
+
+GENERATOR gen_eff_curve Plant1 1 
+#Id;Number;Reference;Pts;X_unit;Y_unit
+10600      0      0.000      2 MW %
+#  x_value;   y_value;
+  0.0 95.0 
+100.0 98.0 
+
+GENERATOR turb_eff_curves Plant1 1
+#Id;Number;Reference;Pts;X_unit;Y_unit
+10600      0    90.000      3 M3/S %
+#  x_value;   y_value;
+ 25.0   80.0
+ 90.0   95.0
+100.0   90.0
+
+GENERATOR turb_eff_curves Plant1 1
+#Id;Number;Reference;Pts;X_unit;Y_unit
+10600      0    100.000      3 M3/S %
+#  x_value;   y_value;
+ 25.0   82.0
+ 90.0   98.0
+100.0   92.0
+
+PUMP attributes Plant1 1 
+#Id Type Penstock Nom_prod Start_cost 
+ 0  0    1        40      500
+
+PUMP gen_eff_curve Plant1 1 
+#Id;Number;Reference;Pts;X_unit;Y_unit
+10700      0      0.000      2 MW %
+#  x_value;   y_value;
+  0.0 100.0 
+50.0 100.0 
+
+PUMP turb_eff_curves Plant1 1
+#Id;Number;Reference;Pts;X_unit;Y_unit
+10700      0    40.000      1 M3/S %
+#  x_value;   y_value;
+ 80.0   87.0
+ 
+PUMP turb_eff_curves Plant1 1
+#Id;Number;Reference;Pts;X_unit;Y_unit
+10700      0    50.000      1 M3/S %
+#  x_value;   y_value;
+ 70.0   86.0
+
+PUMP turb_eff_curves Plant1 1
+#Id;Number;Reference;Pts;X_unit;Y_unit
+10700      0    60.000      1 M3/S %
+#  x_value;   y_value;
+ 60.0   85.0
+
+RESERVOIR attributes Reservoir2
+#ID;Water_course;Type;Maxvol;Lrl;Hrl;
+10000       0      0  5.00000  40.00000  50.00000 
+
+RESERVOIR vol_head Reservoir2
+#Id;Number;Reference;Pts;X_unit;Y_unit
+10000      0      0.000      9 MM3 METER
+#  x_value;   y_value;
+   0.00000  40.00000 
+   5.00000  50.00000 
+   6.00000  51.00000 
+
+RESERVOIR flow_descr Reservoir2
+#Id;Number;Reference;Pts;X_unit;Y_unit
+10000      0      0.000      2 METER M3/S
+#  x_value;   y_value;
+ 50.00000      0.000 
+ 51.00000   1000.000 
+
+#       From_type/To_type  From_name      To_name
+CONNECT RESERVOIR/PLANT    Reservoir1     Plant1
+CONNECT PLANT/RESERVOIR    Plant1         Reservoir2
+
+STARTRES 	2  METER
+# Name	Start reservoir(meters above sea level)
+Reservoir1	92
+Reservoir2	43
+
+RESERVOIR	inflow	Reservoir1
+#	Id	number	starttime		time_unit	period	data_type	y_unit	npts
+	0	0	2018022700	HOUR		8760		-1	M3/S	1
+#	time		y
+2018022700	10
+
+RESERVOIR	inflow	Reservoir2
+#	Id	number	starttime		time_unit	period	data_type	y_unit	npts
+	0	0	2018022700	HOUR		8760		-1	M3/S	1
+#	time		y
+2018022700	0
+
+RESERVOIR endpoint_desc Reservoir1
+#	Number	Ref	Npkt	x_unit	y_unit
+0	1	0	1	Mm3	Kroner
+0	39.7
+
+RESERVOIR endpoint_desc Reservoir2
+#	Number	Ref	Npkt	x_unit	y_unit
+0	1	0	1	Mm3	Kroner
+0	0
+
+MULTI_MARKET	price_buy	1
+#	Id	number	starttime		time_unit	period	data_type	y_unit	npts
+	0	0	2018022700	HOUR		8760		-1	M3/S	1
+#	time		y
+2018022700	20.01
+2018022706	40.01
+
+MULTI_MARKET	price_sale	1
+#	Id	number	starttime		time_unit	period	data_type	y_unit	npts
+	0	0	2018022700	HOUR		8760		-1	M3/S	1
+#	time		y
+2018022700	19.99
+2018022706	39.99
+
+MULTI_MARKET	max_buy	1
+#	Id	number	starttime		time_unit	period	data_type	y_unit	npts
+	0	0	2018022700	HOUR		8760		-1	M3/S	1
+#	time		y
+2018022700	9999
+
+MULTI_MARKET	max_sale	1
+#	Id	number	starttime		time_unit	period	data_type	y_unit	npts
+	0	0	2018022700	HOUR		8760		-1	M3/S	1
+#	time		y
+2018022700	9999
